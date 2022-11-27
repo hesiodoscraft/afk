@@ -1,0 +1,9 @@
+{
+	"ip":"game4.falixserver.net",
+	"port": 11637,
+	"name": "hesiodosbot1",
+	"auto-night-skip":"false",
+	"login-enabled":"true",
+	"register-cmd":"/register Hk007463! ",
+	"login-cmd":"/login Hk007463! "
+}
