@@ -15,6 +15,15 @@ var maxrandom = 5; // 0-5 seconds added to movement interval (randomly)
 var host = data["ip"];
 var username = data["name"]
 var nightskip = data["auto-night-skip"]
+var express = require('express');
+var app = express ();
+app.set('port', (process.env.PORT || 11637));
+app.get('/', function(request, response) {
+	var result = 'App is running'
+	response.send(result);
+}).listen(app.get('port'), function () {
+	console.log('App is running, server is listening on port' , app.get('port'));
+});
 var bot = mineflayer.createBot({
   host: host,
   port:data["port"],
